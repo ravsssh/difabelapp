@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "594966776340",
+    "project_id": "testloginrdt",
+    "storage_bucket": "testloginrdt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594966776340:android:e0d393f818840be48cf501",
+        "android_client_info": {
+          "package_name": "com.example.testloginrdt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594966776340-j5iqe8cjkm040nk86sj7gjb2tm87a7e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXAI27be82WDfH6XCyFb8OY1u8zfX38yE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594966776340-j5iqe8cjkm040nk86sj7gjb2tm87a7e0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,6 +8,7 @@
     android:background="@color/orange">
 
     <ImageView
+        android:id="@+id/Logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/difabel_logo"

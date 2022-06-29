@@ -25,19 +25,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp">
             <ImageView
                 android:id="@+id/logotengah"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/difabel_logo"
-                android:paddingVertical="30dp"/>
+                android:layout_weight="1"
+                />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -56,6 +61,8 @@
                     android:fontFamily="@font/poppins_regular"
                     android:inputType="textEmailAddress"
                     android:background="@drawable/bg2"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
 
                     />
             </LinearLayout>
@@ -77,6 +84,8 @@
                     android:fontFamily="@font/poppins_regular"
                     android:drawableStart="@drawable/lock"
                     android:drawablePadding="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
 
                     />
             </LinearLayout>
@@ -100,7 +109,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp">
                    <androidx.appcompat.widget.AppCompatButton
                        android:id="@+id/loginBtn"
                        android:layout_width="match_parent"
@@ -108,9 +118,7 @@
                        android:text="Login"
                        android:fontFamily="@font/poppins_medium"
                        android:background="@drawable/bg"
-                       android:layout_marginBottom="20dp"
-                       android:layout_marginTop="20dp"
-
+                       android:layout_marginBottom="10dp"
                        >
 
                    </androidx.appcompat.widget.AppCompatButton>

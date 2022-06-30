@@ -25,6 +25,7 @@
         <activity android:name=".Tts"/>
         <activity android:name=".Admin"/>
         <activity android:name=".Login"/>
+        <activity android:name=".Icontts"/>
 
     </application>
 

@@ -33,21 +33,28 @@
             android:textSize="40sp"
             android:textStyle="bold" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/texttospeach"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/mainiconimage"
             android:layout_marginHorizontal="15dp"
-            android:text="Text to speach" />
+            android:text="Text to speach"
+            android:background="@drawable/bg"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/backtomenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/Deskripsipericon"
             android:layout_marginHorizontal="15dp"
-            android:text="back" />
+            android:text="back"
+            android:background="@drawable/bg"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
 
 
     </LinearLayout>

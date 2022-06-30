@@ -2,43 +2,53 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
-    <ImageView
-        android:id="@+id/postfoto"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@mipmap/ic_launcher"
-       />
 
-    <EditText
-        android:layout_below="@+id/postfoto"
-        android:id="@+id/Deskripsi"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="Deskripsi"
-        android:inputType="textPersonName"
-       />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/orange">
 
+        <ImageView
+            android:id="@+id/postfoto"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Browspost"
-        android:id="@+id/carigambar"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Post"
-        android:id="@+id/postlapor"/>
+        <EditText
+            android:id="@+id/Deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postfoto"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Deskripsi"
+            android:inputType="textPersonName"/>
 
-</LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/carigambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg"
+            android:text="Browspost"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="15dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/postlapor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:text="Post"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="15dp"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

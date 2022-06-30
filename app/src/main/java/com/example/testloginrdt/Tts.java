@@ -127,10 +127,19 @@ public class Tts extends AppCompatActivity {
                             String TempImageName = deskripsi.getText().toString().trim();
                             progressDialog.dismiss();
                             Toast.makeText(getApplicationContext(), "Image Uploaded Successfully ", Toast.LENGTH_LONG).show();
-                            @SuppressWarnings("VisibleForTests")
-                            Post imageUploadInfo = new Post(TempImageName, taskSnapshot.getUploadSessionUri().toString());
-                            String ImageUploadId = databaseReference.push().getKey();
-                            databaseReference.child(ImageUploadId).setValue(imageUploadInfo);
+                            //@SuppressWarnings("VisibleForTests")
+
+                            taskSnapshot.getMetadata().getReference().getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    Post imageUploadInfo ;
+                                    imageUploadInfo = new Post(TempImageName, uri.toString());
+                                    String ImageUploadId = databaseReference.push().getKey();
+                                    databaseReference.child(ImageUploadId).setValue(imageUploadInfo);
+                                }
+                            });
+
+
                         }
                     });
         }

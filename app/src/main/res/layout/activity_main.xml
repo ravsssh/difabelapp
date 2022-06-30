@@ -17,5 +17,34 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rycleview"
+                    android:paddingTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/activity_cyle"
+                    android:paddingBottom="50dp"
+                    android:clipToPadding="false">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
 
 </RelativeLayout>
